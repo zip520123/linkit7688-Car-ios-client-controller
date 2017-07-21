@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E7858D171D1BC405004F56FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7858D161D1BC405004F56FA /* AppDelegate.swift */; };
-		E7858D191D1BC405004F56FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7858D181D1BC405004F56FA /* ViewController.swift */; };
+		E7858D191D1BC405004F56FA /* SlinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7858D181D1BC405004F56FA /* SlinVC.swift */; };
 		E7858D1C1D1BC405004F56FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7858D1A1D1BC405004F56FA /* Main.storyboard */; };
 		E7858D1E1D1BC405004F56FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7858D1D1D1BC405004F56FA /* Assets.xcassets */; };
 		E7858D211D1BC405004F56FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7858D1F1D1BC405004F56FA /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		E7858D131D1BC405004F56FA /* Slin Car Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slin Car Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7858D161D1BC405004F56FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7858D181D1BC405004F56FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7858D181D1BC405004F56FA /* SlinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlinVC.swift; sourceTree = "<group>"; };
 		E7858D1B1D1BC405004F56FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7858D1D1D1BC405004F56FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7858D201D1BC405004F56FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,22 @@
 		E7858D151D1BC405004F56FA /* Slin Car Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E7858D161D1BC405004F56FA /* AppDelegate.swift */,
-				E7858D181D1BC405004F56FA /* ViewController.swift */,
+				E7858D281D1BC418004F56FA /* support file */,
+				E7858D181D1BC405004F56FA /* SlinVC.swift */,
 				E7858D1A1D1BC405004F56FA /* Main.storyboard */,
+			);
+			path = "Slin Car Controller";
+			sourceTree = "<group>";
+		};
+		E7858D281D1BC418004F56FA /* support file */ = {
+			isa = PBXGroup;
+			children = (
+				E7858D161D1BC405004F56FA /* AppDelegate.swift */,
 				E7858D1D1D1BC405004F56FA /* Assets.xcassets */,
 				E7858D1F1D1BC405004F56FA /* LaunchScreen.storyboard */,
 				E7858D221D1BC405004F56FA /* Info.plist */,
 			);
-			path = "Slin Car Controller";
+			name = "support file";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +104,7 @@
 				TargetAttributes = {
 					E7858D121D1BC405004F56FA = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -135,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7858D191D1BC405004F56FA /* ViewController.swift in Sources */,
+				E7858D191D1BC405004F56FA /* SlinVC.swift in Sources */,
 				E7858D171D1BC405004F56FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +264,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tw.com.newsoft.Slin-Car-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -266,6 +276,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tw.com.newsoft.Slin-Car-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -288,6 +299,7 @@
 				E7858D271D1BC405004F56FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
